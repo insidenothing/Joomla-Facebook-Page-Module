@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>MDWS Data</name>
+	<author>Patrick McGuire</author>
+	<creationDate>January 2010</creationDate>
+	<copyright>Copyright (C) 2009 MDWestServe, Inc. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>patrick@mdwestserve.com</authorEmail>
+	<authorUrl>www.mdwestserve.com</authorUrl>
+	<version>1.5.0</version>
+	<description>DESCSTATISTICS</description>
+	<files>
+		<filename module="mod_mdws_stats">mod_data.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="pull_page" type="text" default="" label="Facebook Page" description="PULLPAGEINCLUDE" />
+		<param name="pull_page2" type="text" default="" label="Facebook Page 2" description="PULLPAGEINCLUDE2" />
+		<param name="pull_page3" type="text" default="" label="Facebook Page 3" description="PULLPAGEINCLUDE3" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>
